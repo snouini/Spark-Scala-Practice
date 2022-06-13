@@ -1,6 +1,6 @@
-# Spark-Scala-Practice
+# Spark-Practice
 
-In this repo you can find all the scripts  I've been generating while practicing with Spark.
+In this Repo you can find all the scripts I've been generating while practicing with Spark.
 
-I've been been using the book "Learning Spark" and reproducing all the examples you can find in it and added examples for a more in-depth learning journey.
-
+I've been developing the examples presented in the book "Learning Spark-Lightning-Fast Data Analytics" (2nd Edition) by Jules S. Damji,Brooke Wenig,Tathagata Das
+& Denny Lee.
