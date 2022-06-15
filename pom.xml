@@ -2,8 +2,14 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.example</groupId>
   <artifactId>Spark</artifactId>
-  <version>1.0-SNAPSHOT</version>
-  <name>${project.artifactId}</name>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>Chapter3</module>
+        <module>Chapter2</module>
+
+    </modules>
+    <name>${project.artifactId}</name>
   <description>My wonderfull scala app</description>
   <inceptionYear>2018</inceptionYear>
   <licenses>
