@@ -6,7 +6,6 @@ import org.apache.spark.sql.functions._
 import org.apache.spark.sql.expressions._
 
 object Chapter4 {
-  case class Controls (table: String)
 
   def main(args: Array[String]): Unit = {
 
@@ -18,8 +17,13 @@ object Chapter4 {
 
    depDelaysDF.createOrReplaceTempView("us_delay_flights_table")
 
+   depDelaysDF.show()
+
+
     // Queries using spark sql
-   spark.sql(
+
+
+ spark.sql(
      """SELECT distance, origin, destination from us_delay_flights_table
        where distance > 1000 Order by distance DESC""").show(10)
 
@@ -66,35 +70,6 @@ object Chapter4 {
 
     spark.sql("""CREATE DATABASE learn_spark_db""")
     
-
-
-
-
-   }
-
-
-
-
-
-
-
-
-
-
-
-    //  val d1 = LocalDate.parse("2022-04-06")
-    //  val d2 = LocalDate.parse("2022-05-05")
-
-
-      //println(ChronoUnit.MONTHS.between(d2,d1))
-
-    //val listMap2: ListMap[String, String] =
-      //ListMap("VD"-> "Vanilla Donut", "GD" -> "Glazed Donut") += ("KD" -> "Krispy Kreme Donut")
-
-
-
-
-
-
+  }
 
 }
